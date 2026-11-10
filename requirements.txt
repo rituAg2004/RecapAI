@@ -1,0 +1,82 @@
+# # ── Audio / Video Acquisition & Processing ────────────────────────────────────
+# yt-dlp>=2024.4.9                  # Download YouTube audio/video streams
+# imageio-ffmpeg>=0.5.1             # Provides FFmpeg binary automatically for yt-dlp
+# audioop-lts>=0.2.1                # Fixes Python 3.13 missing audioop for pydub/audio libs
+# pydub>=0.25.1                     # Audio slicing and format conversions
+
+# # ── Speech-to-Text & Translation (Whisper) ────────────────────────────────────
+# openai-whisper>=20231117          # Local transcription & direct Hindi->English translation
+# torch>=2.2.0                      # PyTorch backend for Whisper
+# torchaudio>=2.2.0                 # PyTorch audio processing
+# deep-translator>=1.11.4           # Fallback text translator for summaries/prompts
+
+# # ── LLM Orchestration — LangChain LCEL + Mistral ──────────────────────────────
+# langchain>=0.2.14
+# langchain-core>=0.2.35
+# langchain-community>=0.2.12
+# langchain-mistralai>=0.1.12       # Mistral API provider for LCEL chains
+# mistralai>=0.4.2                  # Mistral official SDK
+
+# # ── RAG Pipeline & Vector Store ───────────────────────────────────────────────
+# chromadb>=0.5.4                   # Local persistent vector store
+# langchain-huggingface>=0.0.3      # HuggingFace Embeddings integration
+# sentence-transformers>=3.0.0      # Text embeddings model runner
+# tiktoken>=0.7.0                   # Fast token-based text splitting
+
+# # ── Streamlit UI ──────────────────────────────────────────────────────────────
+# streamlit>=1.37.0                 # Web interface
+# streamlit-extras>=0.4.3           # Custom components and layout add-ons
+# watchdog>=4.0.0                   # File watcher for auto-reload
+
+# # ── Export & Utilities ────────────────────────────────────────────────────────
+# fpdf2>=2.7.9                      # Simple and fast PDF report generation
+# python-dotenv>=1.0.1              # Load environment variables (.env)
+# numpy>=1.26.0                     # Numerical processing for audio buffers
+# tqdm>=4.66.4                      # Progress tracking
+
+
+
+# ── AI Meeting Assistant ── requirements.txt ──────────────────────────────────
+# Python >= 3.10 recommended
+
+# ── Audio / Video acquisition ─────────────────────────────────────────────────
+yt-dlp>=2024.4.9                  # Download audio from YouTube URLs
+pydub>=0.25.1                     # Audio file manipulation / format conversion
+ffmpeg-python>=0.2.0              # FFmpeg bindings (FFmpeg binary must be installed separately)
+
+# ── Speech-to-Text (local Whisper) ────────────────────────────────────────────
+openai-whisper>=20231117          # OpenAI Whisper (runs locally)
+torch>=2.2.0                      # PyTorch backend for Whisper
+torchaudio>=2.2.0                 # Audio utilities for PyTorch
+
+# ── Translation (Hindi → English) ─────────────────────────────────────────────
+deep-translator>=1.11.4           # Lightweight translation wrapper (Google backend)
+
+# ── LLM Orchestration — LangChain LCEL + Mistral ──────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-mistralai>=0.1.0        # LangChain wrapper for Mistral API
+mistralai>=0.4.0                  # Official Mistral Python client
+
+# ── RAG Pipeline ──────────────────────────────────────────────────────────────
+chromadb>=0.5.0                   # Local vector store
+sentence-transformers>=3.0.0      # HuggingFace embedding models
+langchain-huggingface>=0.0.3      # LangChain ↔ HuggingFace embeddings bridge
+huggingface-hub>=0.23.0           # Model downloading from HuggingFace Hub
+tiktoken>=0.7.0                   # Token counting for text splitting
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+streamlit-extras>=0.4.0           # Additional Streamlit widgets / utilities
+watchdog>=4.0.0                   # File-change watcher (improves Streamlit hot-reload)
+
+# ── PDF & TXT Export ──────────────────────────────────────────────────────────
+reportlab>=4.2.0                  # PDF generation
+fpdf2>=2.7.9                      # Lightweight alternative PDF library
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0              # Load API keys from .env
+numpy>=1.26.0
+tqdm>=4.66.0                      # Progress bars
+requests>=2.32.0
