@@ -37,7 +37,7 @@ AI-Video-Assistant/
 ## 🚀 Setup
 
 ```bash
-git clone https://github.com/AkarshVyas/AI-Video-Assistant-.git
+git clone https://github.com/rituAg2004/RecapAI.git
 cd AI-Video-Assistant-
 
 python -m venv venv
