@@ -2,8 +2,6 @@
 
 A free AI Meeting Assistant built in Python. Give it a YouTube URL or an audio/video file, and it transcribes, summarizes, extracts action items and decisions, and lets you chat with your meeting using RAG.
 
-📺 Full tutorial: https://www.youtube.com/watch?v=xlYJhtL0qbQ
-
 ## ✨ Features
 
 - YouTube URL or local audio/video file as input
